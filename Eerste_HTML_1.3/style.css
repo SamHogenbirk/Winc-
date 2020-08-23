@@ -1,0 +1,41 @@
+body{
+    font-family: 'Russo One', sans-serif;
+    background-color: floralwhite;
+   }
+
+.border{
+    
+    margin: auto;
+    border: 1px dashed #cccccc
+
+}
+
+#bgcolor{
+    background-color: green;
+}
+
+.box-align{
+    text-align: center;
+}
+
+.navlist{
+    border: 1px, lightblue;    
+    display: flex;
+    list-style-type: none;
+}
+
+#space-list{
+   margin: 5px;
+}
+
+.footer-text{
+    
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+
+}
+
+a:visited{
+    color:greenyellow
+}
