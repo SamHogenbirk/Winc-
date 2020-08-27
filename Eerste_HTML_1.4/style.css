@@ -1,0 +1,92 @@
+    body{
+        font-family: 'Russo One', sans-serif;
+        background-color: floralwhite;
+        
+    }
+
+    header{
+        border: 1px solid lightblue;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+
+    }
+
+  
+
+    .border{
+        
+        margin: auto;
+        border: 1px dashed #cccccc
+
+    }
+
+    .border-color{
+        margin: auto;
+        border: 2px solid lightblue;
+        margin-bottom: 10px;
+        border-radius: 2%;
+        
+    }
+
+    .box-align{
+        text-align: center;
+    }
+
+    nav > ul  {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    } 
+
+    #navbar-top > li {
+        float: left;
+    } 
+    
+    #navbar-top > li a {
+        
+        text-align: center;
+        display: block;
+        background-color: white;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    } 
+
+    #navbar-top > li a:hover{
+        background-color: lightgray;
+    }
+
+    #navbar-top > a:visited{
+        color:black
+    }
+    
+    .article1{
+    
+        padding-top: 1%;
+        padding-right: 5px;
+        padding-bottom: 1%;
+        padding-left: 5px;
+        margin-left: 33%;
+        margin-right: 33%;
+        margin-bottom: 10px;
+        border: 2px solid lightblue;
+        
+    }
+
+    .article2{
+
+        padding: 1% 5px;
+        margin: 0 auto;
+        width: 80%;
+        border: 2px solid lightblue;
+    }
+
+    .footer-text{
+        
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: small;
+
+    }
