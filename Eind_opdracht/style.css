@@ -1,0 +1,262 @@
+body{
+    font-family: Gayathri;
+    background-color: black;
+    /* background-color: rgb(23, 32, 32); */
+    color: white;
+}
+
+a{
+
+    color: white;
+}
+
+a:hover{
+
+    color: lightgreen;
+}
+
+.container{
+ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:    50px auto auto 100px;
+    grid-template-areas: 
+        " m m m " 
+        " h h h "
+        " c c c"
+        " f f f"
+    ;
+}
+
+nav{
+
+    grid-area: m;
+    margin-bottom: 15px;
+    background-color:rgb(32,32,32) ;
+    color: white;
+    border: 0px solid gray;
+    border-radius: 15px;
+    font-style: italic;
+}
+
+#menu{
+
+    display: flex;
+    justify-content: center;
+}
+
+#menu > div{
+    
+    padding: 10px 5px;
+}
+
+header{
+
+    grid-area: h;
+    /* background-size: cover;
+    background-image: url(images/planet.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color:rgb(32,32,32) ;
+    border: 0px solid gray;
+    border-radius: 15px;
+}
+
+.header-h1{
+    font-family: roboto;
+    margin: 10px auto 2px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    font-style: italic;
+}
+
+.header-h3{
+
+    text-align: center;
+    margin-top: 0;
+}
+
+header > p{
+
+    text-align: center;
+    font-style: italic;
+}
+
+.main{
+
+    grid-area: c;
+    background-color:rgb(32,32,32);
+    border: 0px solid black;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding: 5px;
+    /* box-shadow: 0 0 2px 1px whitesmoke; */
+    overflow: hidden; 
+}
+
+.article-main{
+
+    display: flex;
+    padding: 5px;
+}
+
+.span-text > h4{
+
+    margin: 0 0 3px;
+}
+
+.span-text > a{
+
+    color: blue;
+}
+
+.span-text{
+
+    padding: 5px 5%;
+    text-align: left;
+    margin: 0 2px 0 5px;
+    max-width: 50%;    
+    /* border: 0.5 rgb(23, 32, 32) solid; */
+    border-radius: 15px;   
+}
+
+.span-img{
+
+    min-width: 50%;
+    height: auto;
+    justify-content: right;
+}
+
+iframe{
+
+    margin-left: 30px;
+    width: 200px;
+    height: auto;
+}
+
+.img{
+
+    width: 200px;
+    height: auto;
+    border-radius: 15px; 
+    margin-top: 10px;
+}
+
+.picture-feed{
+
+    margin-left: 30%;
+}
+
+.picture-feed > p{
+
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+form{
+
+    margin-left: 33%;
+}
+
+.text{
+
+   height: 150px;
+   width: 100%;
+}
+
+form > span{
+
+    display: flex;
+    padding-left: 10px;
+}
+
+footer{
+
+    grid-area: f;
+    display: flex;
+}
+
+.footer-h2{
+
+    margin-bottom: 0px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.footer-list{
+
+    margin: 20px 0px 0px 10px;
+    color: whitesmoke;
+    padding: 5px;
+}
+
+footer > p{
+
+    margin: 80px 40%;
+    text-align: right;
+}
+
+.button{
+
+    transition-duration: 0.4s;
+    border: black solid 1px;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    color: black;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+    cursor: pointer;   
+}
+
+.button:hover{
+
+    background-color: #4CAF50;
+    color: white;
+}
+
+#media-tab{
+    
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px){
+
+ 
+iframe{
+    margin-left: 25%;
+}
+
+#media-tab{
+    display: block;
+}
+
+ 
+}
+
+@media only screen and (min-width: 1024px){
+    
+
+    .img{
+
+        width: 300px;
+        height: auto;
+    }
+
+    iframe{
+
+        width: 300px;
+        height: 500px;
+        margin-left: 22.5%;
+    }
+
+    .main{
+
+        margin-bottom: 15px;
+    }
+
+}
