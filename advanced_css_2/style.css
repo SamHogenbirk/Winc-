@@ -1,0 +1,68 @@
+.hover:hover{
+    color: lightblue;
+    font-weight: bolder;
+}
+
+.active:active{
+    color: red;
+    font-style: italic;
+}
+
+.visited:visited{
+    color: yellow;
+}
+
+.input:focus{
+    color: green;
+    font-size: 20px;
+}
+
+.currentpage{
+
+    background-color: lightgray;
+
+}
+
+nav{
+    margin-top: 20px;
+    border: 1px solid lightblue;
+    
+}
+
+ul{
+
+    display: flex;
+    list-style-type: none;
+    background-color: lightblue;
+    
+}
+
+li{
+ 
+    margin-right: 5px;
+    padding: 10px;
+    border: 0.5px solid lightblue;
+    
+}
+
+li a:hover{
+
+    background-color: darkblue;
+    color: white;
+}
+
+li:first-child{
+
+    padding-left: 0px;
+
+}
+
+input[type="search"]:focus{
+
+
+    outline: none;
+    border: 1px solid red;
+   
+
+}
+
