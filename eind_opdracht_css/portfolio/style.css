@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  justify-items: center;
+      grid-template-areas: " c c c";
+}
+
+.fade__button {
+  z-index: -1;
+  position: fixed;
+  border: none;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  margin-top: 150px;
+  margin-left: 100px;
+  width: 100px;
+  height: 75px;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 300px;
+  height: auto;
+  justify-items: center;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.container__text {
+  padding: 10px 20px;
+  justify-items: center;
+  font-size: 1.3em;
+  color: gray;
+  text-align: center;
+}
+
+.container__bottom {
+  margin-top: 50px;
+  height: 130px;
+  width: auto;
+  background-color: #686de0;
+  border-radius: 0 0 30px 30px;
+}
+
+.container__image {
+  width: 75px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 33.3%;
+  padding: 4px;
+  margin-top: -50px;
+  background-color: white;
+}
+
+.container__testamonial {
+  text-align: center;
+  color: white;
+}
+
+.container__testamonial h5 {
+  color: lightgray;
+}
+
+.container:hover {
+  -webkit-animation: fade 0.5s ease-out forwards;
+          animation: fade 0.5s ease-out forwards;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 730px) and (min-width: 200px) {
+  body .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-row: auto;
+    justify-items: center;
+        grid-template-areas: " c ";
+  }
+}
+
+@media screen and (min-width: 730px) and (max-width: 1000px) {
+  body .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    justify-items: center;
+        grid-template-areas: " c c ";
+  }
+}
+/*# sourceMappingURL=style.css.map */

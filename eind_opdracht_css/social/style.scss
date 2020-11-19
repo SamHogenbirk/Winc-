@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$text-color:white;
+
+body{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: column;
+    height: 100vh;
+    grid-template-areas: 
+    
+    " al c ar" ;
+}
+
+.container{
+    
+    grid-area: ar;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 80%;
+    
+}
+
+.container__social{
+
+    display: flex;
+    width: 200px;
+    margin-right: -180px;
+    height: 45px;
+    align-items: center;
+    padding-left: 10px;
+    color: $text-color;
+    
+    & ::before{
+
+        padding-right: 10px;
+        font-family: "Font Awesome 5 Brands";
+        
+    }
+    
+    &  a{
+        
+        color: $text-color;
+        text-decoration: none;
+        
+         :visited{
+            color: $text-color;
+        }
+    }    
+}
+
+.social{
+
+    &--blog{
+    
+        background-color: #e17b77;
+       
+         ::before{
+            
+             content: "\f37d";
+        }
+    
+    }
+
+    &--twitter{
+
+    background-color: #00aced;
+
+         ::before{
+        
+        content: "\f099";
+        }   
+    }
+
+    &--facebook{
+
+        background-color: #3b5998;
+    
+         ::before{
+    
+            content: "\f39e";
+        }
+    }
+
+    &--linkedin{
+
+        background-color: #007bb6;
+    
+        ::before{
+    
+             content: "\f0e1";
+        }
+    }
+
+    &--github{
+        background-color: #333;
+    
+        ::before{
+            
+            content: "\f09b";
+        }
+    }
+}
+
+.container__social:hover{
+    transition: 1s ease-in-out;
+    transform: translate(-180px);
+}

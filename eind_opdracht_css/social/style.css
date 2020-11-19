@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row: column;
+  height: 100vh;
+      grid-template-areas: " al c ar";
+}
+
+.container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: ar;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-top: 80%;
+}
+
+.container__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  margin-right: -180px;
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  color: white;
+}
+
+.container__social ::before {
+  padding-right: 10px;
+  font-family: "Font Awesome 5 Brands";
+}
+
+.container__social a {
+  color: white;
+  text-decoration: none;
+}
+
+.container__social a :visited {
+  color: white;
+}
+
+.social--blog {
+  background-color: #e17b77;
+}
+
+.social--blog ::before {
+  content: "\f37d";
+}
+
+.social--twitter {
+  background-color: #00aced;
+}
+
+.social--twitter ::before {
+  content: "\f099";
+}
+
+.social--facebook {
+  background-color: #3b5998;
+}
+
+.social--facebook ::before {
+  content: "\f39e";
+}
+
+.social--linkedin {
+  background-color: #007bb6;
+}
+
+.social--linkedin ::before {
+  content: "\f0e1";
+}
+
+.social--github {
+  background-color: #333;
+}
+
+.social--github ::before {
+  content: "\f09b";
+}
+
+.container__social:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: translate(-180px);
+          transform: translate(-180px);
+}
+/*# sourceMappingURL=style.css.map */
