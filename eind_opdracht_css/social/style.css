@@ -10,6 +10,7 @@ body {
       grid-template-columns: repeat(3, 1fr);
   grid-row: column;
   height: 100vh;
+  overflow: hidden;
       grid-template-areas: " al c ar";
 }
 
@@ -26,6 +27,13 @@ body {
           flex-direction: column;
   margin-left: auto;
   margin-top: 80%;
+}
+
+.container__social:hover {
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform: translate(-180px);
+          transform: translate(-180px);
 }
 
 .container__social {
@@ -94,12 +102,5 @@ body {
 
 .social--github ::before {
   content: "\f09b";
-}
-
-.container__social:hover {
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
-  -webkit-transform: translate(-180px);
-          transform: translate(-180px);
 }
 /*# sourceMappingURL=style.css.map */

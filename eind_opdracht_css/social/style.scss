@@ -11,6 +11,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-row: column;
     height: 100vh;
+    overflow: hidden;
     grid-template-areas: 
     
     " al c ar" ;
@@ -24,9 +25,12 @@ body{
     margin-left: auto;
     margin-top: 80%;
     
-}
-
-.container__social{
+    &__social:hover{
+        transition: 1s ease-in-out;
+        transform: translate(-180px);
+    }
+    
+    &__social{
 
     display: flex;
     width: 200px;
@@ -51,8 +55,10 @@ body{
          :visited{
             color: $text-color;
         }
-    }    
+    }  
 }
+}
+
 
 .social{
 
@@ -107,7 +113,3 @@ body{
     }
 }
 
-.container__social:hover{
-    transition: 1s ease-in-out;
-    transform: translate(-180px);
-}
