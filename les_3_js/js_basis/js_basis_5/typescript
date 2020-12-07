@@ -1,0 +1,76 @@
+Script started on Thu Nov 26 18:31:45 2020
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ node script.js\[K
+sam
+[33m37[39m
+[ [33m7[39m, [33m10[39m, [33m9[39m ]
+[
+  [32m'groen'[39m,
+  [32m'blauw'[39m,
+  [32m'rood'[39m,
+  [32m'paars'[39m,
+  [33m5[39m,
+  { greeting: [32m'hi I am a object'[39m }
+]
+[33m6[39m
+groen
+[ { greeting: [32m'hi I am a object'[39m } ]
+American Bobtail
+[33m5[39m
+Affectionate
+Sensitive
+meaty things
+bash-3.2$ node script.js
+sam
+[33m37[39m
+[ [33m7[39m, [33m10[39m, [33m9[39m ]
+[
+  [32m'groen'[39m,
+  [32m'blauw'[39m,
+  [32m'rood'[39m,
+  [32m'paars'[39m,
+  [33m5[39m,
+  { greeting: [32m'hi I am a object'[39m }
+]
+[33m6[39m
+groen
+[ { greeting: [32m'hi I am a object'[39m } ]
+American Bobtail
+[33m5[39m
+Affectionate
+Sensitive
+meaty things
+bash-3.2$ node script.js
+sam
+[33m37[39m
+[ [33m7[39m, [33m10[39m, [33m9[39m ]
+[
+  [32m'groen'[39m,
+  [32m'blauw'[39m,
+  [32m'rood'[39m,
+  [32m'paars'[39m,
+  [33m5[39m,
+  { greeting: [32m'hi I am a object'[39m }
+]
+[33m6[39m
+groen
+[ { greeting: [32m'hi I am a object'[39m } ]
+American Bobtail
+[33m5[39m
+Affectionate
+Sensitive
+meaty things
+[33m6[39m
+bash-3.2$ ls
+script.js	typescript
+bash-3.2$ cd ..
+bash-3.2$ ls
+js_basis_1	js_basis_2	js_basis_3	js_basis_4	js_basis_5	js_basis_6
+bash-3.2$ ja[K[Kcd js_basis_6
+bash-3.2$ ls
+script.js	typescript
+bash-3.2$ node script.js
+bash-3.2$ 
